@@ -5,6 +5,7 @@ public class IntersectionRunner {
         Map<Integer, Integer> mapOfNum1 = new HashMap<>();
         Map<Integer, Integer> mapOfNum2 = new HashMap<>();
         List<Integer> arrayListFinal = new ArrayList<>();
+
         Arrays.stream(nums1).forEach(a -> {
             mapOfNum1.put(a, mapOfNum1.getOrDefault(a, 0) + 1);
         });
@@ -29,12 +30,7 @@ public class IntersectionRunner {
 
         }
 
-        int[] arrayToReturn = new int[arrayListFinal.size()];
-        for (int i = 0; i < arrayListFinal.size(); i++) {
-            arrayToReturn[i] = arrayListFinal.get(i);
-        }
-
-        return arrayToReturn;
+        return arrayListFinal.stream().mapToInt(Integer::intValue).toArray();
 
     }
 
