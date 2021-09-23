@@ -1,34 +1,39 @@
 import java.util.*;
-import java.util.stream.Collectors;
 
 public class IntersectionRunner {
     private static int[] intersectArray(int[] nums1, int[] nums2) {
         Map<Integer, Integer> mapOfNum1 = new HashMap<>();
         Map<Integer, Integer> mapOfNum2 = new HashMap<>();
         List<Integer> arrayListFinal = new ArrayList<>();
-
-
         Arrays.stream(nums1).forEach(a -> {
-            int countOfNumber = (mapOfNum1.containsKey(a)) ? mapOfNum1.get(a) + 1 : 1;
-            mapOfNum1.put(a, countOfNumber);
+            mapOfNum1.put(a, mapOfNum1.getOrDefault(a, 0) + 1);
         });
 
-        Arrays.stream(nums2).filter(e -> mapOfNum1.containsKey(e) ? true : false).boxed().collect(Collectors.groupingBy(e -> e, Collectors.counting())).entrySet().stream().forEach(m -> {
-            if (m.getValue() < mapOfNum1.get(m.getKey())) {
-                for (int j = 0; j < m.getValue(); j++) {
-                    arrayListFinal.add(m.getKey());
-                }
-            } else {
-                for (int j = 0; j < mapOfNum1.get(m.getKey()); j++) {
-                    arrayListFinal.add(m.getKey());
+        Arrays.stream(nums2).forEach(a -> {
+            mapOfNum2.put(a, mapOfNum2.getOrDefault(a, 0) + 1);
+        });
+
+        for (Map.Entry<Integer, Integer> a : mapOfNum1.entrySet()
+        ) {
+            if (mapOfNum2.containsKey(a.getKey())) {
+                if (a.getValue() < mapOfNum2.get(a.getKey())) {
+                    for (int j = 0; j < a.getValue(); j++) {
+                        arrayListFinal.add(a.getKey());
+                    }
+                } else {
+                    for (int j = 0; j < mapOfNum2.get(a.getKey()); j++) {
+                        arrayListFinal.add(a.getKey());
+                    }
                 }
             }
-        });
+
+        }
 
         int[] arrayToReturn = new int[arrayListFinal.size()];
         for (int i = 0; i < arrayListFinal.size(); i++) {
             arrayToReturn[i] = arrayListFinal.get(i);
         }
+
         return arrayToReturn;
 
     }
