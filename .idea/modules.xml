@@ -6,6 +6,7 @@
       <module fileurl="file://$PROJECT_DIR$/buyAndSellStock/buyAndSellStock.iml" filepath="$PROJECT_DIR$/buyAndSellStock/buyAndSellStock.iml" />
       <module fileurl="file://$PROJECT_DIR$/containsDuplicate/containsDuplicate.iml" filepath="$PROJECT_DIR$/containsDuplicate/containsDuplicate.iml" />
       <module fileurl="file://$PROJECT_DIR$/intersectionOfArray/intersectionOfArray.iml" filepath="$PROJECT_DIR$/intersectionOfArray/intersectionOfArray.iml" />
+      <module fileurl="file://$PROJECT_DIR$/mergeArrays/mergeArrays.iml" filepath="$PROJECT_DIR$/mergeArrays/mergeArrays.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/src.iml" filepath="$PROJECT_DIR$/.idea/src.iml" />
     </modules>
   </component>
