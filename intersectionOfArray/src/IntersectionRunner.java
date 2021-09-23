@@ -13,33 +13,24 @@ public class IntersectionRunner {
             mapOfNum1.put(a, countOfNumber);
         });
 
-        Arrays.stream(nums2).forEach(a -> {
-            int countOfNumber = (mapOfNum2.containsKey(a)) ? mapOfNum2.get(a) + 1 : 1;
-            mapOfNum2.put(a, countOfNumber);
-        });
-
-        for (Map.Entry<Integer, Integer> a : mapOfNum1.entrySet()
-        ) {
-            if (mapOfNum2.containsKey(a.getKey())) {
-                if (a.getValue() < mapOfNum2.get(a.getKey())) {
-                    for (int j = 0; j < a.getValue(); j++) {
-                        arrayListFinal.add(a.getKey());
-                    }
-                } else {
-                    for (int j = 0; j < mapOfNum2.get(a.getKey()); j++) {
-                        arrayListFinal.add(a.getKey());
-                    }
+        Arrays.stream(nums2).filter(e -> mapOfNum1.containsKey(e) ? true : false).boxed().collect(Collectors.groupingBy(e -> e, Collectors.counting())).entrySet().stream().forEach(m -> {
+            if (m.getValue() < mapOfNum1.get(m.getKey())) {
+                for (int j = 0; j < m.getValue(); j++) {
+                    arrayListFinal.add(m.getKey());
+                }
+            } else {
+                for (int j = 0; j < mapOfNum1.get(m.getKey()); j++) {
+                    arrayListFinal.add(m.getKey());
                 }
             }
-
-        }
+        });
 
         int[] arrayToReturn = new int[arrayListFinal.size()];
         for (int i = 0; i < arrayListFinal.size(); i++) {
             arrayToReturn[i] = arrayListFinal.get(i);
         }
-
         return arrayToReturn;
+
     }
 
     public static void main(String[] args) {
