@@ -2,6 +2,7 @@ import java.util.Arrays;
 
 public class MergeArrayRunner {
     private static void merger(int[] nums1, int m, int[] nums2, int n) {
+
         //faster and optimal
         for (int i = 0; i < nums2.length; i++) {
             nums1[m + i] = nums2[i];
