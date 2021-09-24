@@ -3,6 +3,7 @@ import java.util.Map;
 
 public class FirstUniqueCharIndexRunner {
     private static int uniqueCharIndex(String s) {
+        //return index of first unique character
         Map<Character, Integer> mapOfCharAndCount = new HashMap<>();
         for (char c : s.toCharArray()) {
             mapOfCharAndCount.put(c, mapOfCharAndCount.getOrDefault(c, 0) + 1);
