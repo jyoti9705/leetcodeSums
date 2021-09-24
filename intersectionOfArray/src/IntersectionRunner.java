@@ -2,6 +2,7 @@ import java.util.*;
 
 public class IntersectionRunner {
     private static int[] intersectArray(int[] nums1, int[] nums2) {
+        //intersect arrays
         Map<Integer, Integer> mapOfNum1 = new HashMap<>();
         Map<Integer, Integer> mapOfNum2 = new HashMap<>();
         List<Integer> arrayListFinal = new ArrayList<>();
