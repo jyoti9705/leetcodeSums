@@ -7,7 +7,9 @@
       <module fileurl="file://$PROJECT_DIR$/containsDuplicate/containsDuplicate.iml" filepath="$PROJECT_DIR$/containsDuplicate/containsDuplicate.iml" />
       <module fileurl="file://$PROJECT_DIR$/firstUniqueCharIndex/firstUniqueCharIndex.iml" filepath="$PROJECT_DIR$/firstUniqueCharIndex/firstUniqueCharIndex.iml" />
       <module fileurl="file://$PROJECT_DIR$/intersectionOfArray/intersectionOfArray.iml" filepath="$PROJECT_DIR$/intersectionOfArray/intersectionOfArray.iml" />
+      <module fileurl="file://$PROJECT_DIR$/maximumSubArray/maximumSubArray.iml" filepath="$PROJECT_DIR$/maximumSubArray/maximumSubArray.iml" />
       <module fileurl="file://$PROJECT_DIR$/mergeArrays/mergeArrays.iml" filepath="$PROJECT_DIR$/mergeArrays/mergeArrays.iml" />
+      <module fileurl="file://$PROJECT_DIR$/reshapeMatrix/reshapeMatrix.iml" filepath="$PROJECT_DIR$/reshapeMatrix/reshapeMatrix.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/src.iml" filepath="$PROJECT_DIR$/.idea/src.iml" />
     </modules>
   </component>
