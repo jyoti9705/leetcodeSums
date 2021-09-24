@@ -3,6 +3,7 @@ import java.util.Arrays;
 public class TwoSumRunner {
 
     private static int[] getSumEqualsTargetIndices(int[] nums , int target){
+        //two sums equal target
         for (int i = 0 ; i < nums.length ; i++){
             for (int j = i+ i ; j < nums.length ; j++){
                 if(nums[i]+nums[j]==target){
