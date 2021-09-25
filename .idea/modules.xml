@@ -9,8 +9,11 @@
       <module fileurl="file://$PROJECT_DIR$/intersectionOfArray/intersectionOfArray.iml" filepath="$PROJECT_DIR$/intersectionOfArray/intersectionOfArray.iml" />
       <module fileurl="file://$PROJECT_DIR$/maximumSubArray/maximumSubArray.iml" filepath="$PROJECT_DIR$/maximumSubArray/maximumSubArray.iml" />
       <module fileurl="file://$PROJECT_DIR$/mergeArrays/mergeArrays.iml" filepath="$PROJECT_DIR$/mergeArrays/mergeArrays.iml" />
+      <module fileurl="file://$PROJECT_DIR$/pascalTriangle/pascalTriangle.iml" filepath="$PROJECT_DIR$/pascalTriangle/pascalTriangle.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ransomeNote/ransomeNote.iml" filepath="$PROJECT_DIR$/ransomeNote/ransomeNote.iml" />
       <module fileurl="file://$PROJECT_DIR$/reshapeMatrix/reshapeMatrix.iml" filepath="$PROJECT_DIR$/reshapeMatrix/reshapeMatrix.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/src.iml" filepath="$PROJECT_DIR$/.idea/src.iml" />
+      <module fileurl="file://$PROJECT_DIR$/validAnagram/validAnagram.iml" filepath="$PROJECT_DIR$/validAnagram/validAnagram.iml" />
     </modules>
   </component>
 </project>
